@@ -61,6 +61,11 @@ const subscriptionSchema = new mongoose.Schema({
     ref: 'User',
     required: [true, "User ID is required"],
     index: true,
+  },
+  workflowRunId: {
+    type: String,
+    required: false,
+    default: null
   }
 }, {timestamps: true});
 
