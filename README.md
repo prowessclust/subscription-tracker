@@ -1,6 +1,7 @@
-# Email Subscription Tracker Backend
-This is a robust, production-ready backend API for an **email subscription management system**. I built this as a learning project, focusing on architecting secure and scalable APIs. It incorporates advanced features like JWT authentication, database modeling, security best practices, and automated workflows.
+# Email Subscription Tracker Backend 📧
 
+This is a robust, production-ready backend API for an **email subscription management system**. I built this as a learning project, focusing on architecting secure and scalable APIs. It incorporates advanced features like JWT authentication, database modeling, security best practices, and automated workflows.  
+<br>
 ## Features
 - **RESTful API Design:** Provides a clean and efficent set of RESTful endpoints for managing user authentication and subscriptions.
 - **JWT Authentication:** Implements JSON Web Token for secure user authentication and authorization.
@@ -10,8 +11,9 @@ This is a robust, production-ready backend API for an **email subscription manag
 - **Comprehensive CRUD Operations:** Full Create, Read, Update, Delete (CRUD) functionality for users and subscriptions, including authorization checks.
 - **Subscription Management:** Includes functionality for tracking upcoming subscription renewals.
 - **Efficient API Testing:** Used HTTPie for effective testing of API endpoints during development.
+<br>
 
-## Technologies Used
+## Technologies Used 💻
 - **Language:** Javascript
 - **Web Framework:** Express.js
 - **Database:** MongoDB
@@ -20,9 +22,9 @@ This is a robust, production-ready backend API for an **email subscription manag
 - **Caching/Data Store:** Upstash
 - **API Testing:** HTTPie
 
-## API Endpoints
+<br>
 
----
+## API Endpoints 👇
 
 ### Authentication Endpoints (`/api/v1/auth`)
 
@@ -34,7 +36,7 @@ These endpoints handle user authentication processes, including registration, lo
 | `POST` | `/sign-in` | Authenticates a user and logs them in. |
 | `POST` | `/sign-out` | Logs out the currently authenticated user. |
 
----
+<br>
 
 ### User Endpoints (`/api/v1/users`)
 
@@ -48,7 +50,7 @@ These endpoints manage user-related information. Some endpoints require authoriz
 | `PUT` | `/:id` | \- | Updates an existing user's information by ID. |
 | `DELETE` | `/:id` | \- | Deletes a user record by ID. |
 
----
+<br>
 
 ### Subscription Endpoints (`/api/v1/subscriptions`)
 
@@ -65,7 +67,7 @@ These endpoints manage user subscriptions, allowing for creation, retrieval, upd
 | `PUT` | `/:id` | \- | Cancels a user's subscription by ID. |
 | `GET` | `/upcoming-renewals` | \- | Retrieves a list of upcoming subscription renewals. |
 
----
+<br>
 
 ### Workflow Endpoints (`/api/v1/workflows`)
 
@@ -75,11 +77,13 @@ These endpoints handle automated processes and workflows.
 | :----- | :--------------------- | :--------- | :--------------------------------------------- |
 | `POST` | `/subscription/reminder` | \- | Triggers the sending of subscription reminders. |
 
----
+<br>
 
 ### Authorization Middleware
 
 Endpoints marked with `authorize` require a valid authentication token to be present in the request (e.g., in the `Authorization` header).
+
+<br>
 
 ## 🤸 Quick Start
 
